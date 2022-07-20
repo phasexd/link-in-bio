@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>kurumbbi</title>
+</head>
+<body style="height: 100%;width: 100%">
+    <div style="position: fixed; top: 0; width: auto; height: auto; z-index: -1;">
+        <div class="auto" style="max-width:500px">
+            <img class="mySlides" src="./images/img__2.jpg" style="width:100%">
+            <img class="mySlides" src="./images/img__1.jpg" style="width:100%">
+            <img class="mySlides" src="./images/img__3.jpg" style="width:100%">
+            <img class="mySlides" src="./images/img__4.jpg" style="width:100%">
+            <img class="mySlides" src="./images/IMG_20220719_215408.jpg" style="width:100%">
+            <img class="mySlides" src="./images/img__9.jpg" style="width:100%">
+            <img class="mySlides" src="./images/img__8.jpg" style="width:100%">
+          </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+          }
+          window.addEventListener('DOMContentLoaded', () => {
+      
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+
+
+
+          </script>
+    </div>
+   <main class="animated">
+    <header>
+        <img src="./images/IMG_20220719_210451.jpg" alt="kurumbii" width="100px" height="100px"/>
+
+   
+    <h1>@kurumbbi</h1>
+    
+</header>
+    <ul>
+        <li><a href="https://instagram.com/kurumbbi?igshid=YmMyMTA2M2Y=">
+            <img src="./images/instagram.svg" alt="instagram" width="20px"/>
+            Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UC7uod67nv44hLfImzyYxnqQ">
+            <img src="./images/youtube.svg" alt="youtube" width="20px"/>
+            Youtube</a></li>
+        <li><a href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter" width="20px"/>
+            
+            twitter</a></li>
+
+    </ul>
+   
+</main>
+</body>
+</html>
